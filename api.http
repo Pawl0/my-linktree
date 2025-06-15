@@ -1,8 +1,13 @@
 ####### Link routes
 
-### Returns all links
+### Returns all links from a user by id
 
 GET http://localhost:3000/admin/links/all/1
+Content-Type: application/json
+
+### Returns all links from a user by username
+
+GET http://localhost:3000/links/paulohos
 Content-Type: application/json
 
 ### Returns a single link
@@ -16,7 +21,7 @@ POST http://localhost:3000/admin/links
 Content-Type: application/json
 
 {
-    "title": "First Link",
+    "title": "Google",
     "url": "www.google.com.br",
     "userId": 1
 }
@@ -55,7 +60,8 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name": "First user",
+    "name": "Paulo",
+    "username": "paulohos",
     "email": "teste@gmail.com"
 }
 
@@ -65,8 +71,9 @@ PATCH http://localhost:3000/users/1
 Content-Type: application/json
 
 {
-    "name": "Updated user",
-    "email": "www.google.com.br"
+    "name": "Paulo",
+    "username": "paulohos",
+    "email": "teste@gmail.com"
 }
 
 ### Deletes a user
