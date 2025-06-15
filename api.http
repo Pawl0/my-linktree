@@ -1,0 +1,75 @@
+####### Link routes
+
+### Returns all links
+
+GET http://localhost:3000/admin/links/all/1
+Content-Type: application/json
+
+### Returns a single link
+
+GET http://localhost:3000/admin/links/1
+Content-Type: application/json
+
+### Creates a link
+
+POST http://localhost:3000/admin/links
+Content-Type: application/json
+
+{
+    "title": "First Link",
+    "url": "www.google.com.br",
+    "userId": 1
+}
+
+### Updates a link
+
+PATCH http://localhost:3000/admin/links/1
+Content-Type: application/json
+
+{
+    "title": "Updated Link",
+    "url": "www.google.com.br",
+    "userId": 1234
+}
+
+### Deletes a link
+
+DELETE http://localhost:3000/admin/links/1
+Content-Type: application/json
+
+####### User routes
+
+### Returns all users
+
+GET http://localhost:3000/users
+Content-Type: application/json
+
+### Returns a single user
+
+GET http://localhost:3000/users/1
+Content-Type: application/json
+
+### Creates a user
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "First user",
+    "email": "teste@gmail.com"
+}
+
+### Updates a user
+
+PATCH http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+    "name": "Updated user",
+    "email": "www.google.com.br"
+}
+
+### Deletes a user
+
+DELETE http://localhost:3000/users/1
+Content-Type: application/json
