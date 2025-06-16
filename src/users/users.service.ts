@@ -48,6 +48,16 @@ export class UsersService {
     return userFound;
   }
 
+  async findOneByUsername(username: string) {
+    const userFound = await this.prismaService.user.findUnique({
+      where: { username },
+    });
+    if (!userFound) {
+      throw new NotFoundException(`User with username ${username} not found`);
+    }
+    return userFound;
+  }
+
   async update(id: number, updateUserDto: UpdateUserDto) {
     const userFound = await this.prismaService.user.count({
       where: { id },

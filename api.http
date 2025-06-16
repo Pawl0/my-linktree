@@ -51,7 +51,7 @@ Content-Type: application/json
 
 ### Returns a single user
 
-GET http://localhost:3000/users/1
+GET http://localhost:3000/users/2
 Content-Type: application/json
 
 ### Creates a user
@@ -61,8 +61,8 @@ Content-Type: application/json
 
 {
     "name": "Paulo Henrique",
-    "username": "paulohos3",
-    "email": "teste3@gmail.com",
+    "username": "paulohos",
+    "email": "test@gmail.com",
     "password": "Teste123"
 }
 
@@ -89,5 +89,5 @@ Content-Type: application/json
 
 {
     "email": "teste@gmail.com",
-    "password": "123456"
+    "password": "Teste123"
 }

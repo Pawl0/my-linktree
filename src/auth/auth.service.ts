@@ -14,7 +14,7 @@ export class AuthService {
       where: { email, password },
     });
     if (!user) {
-      throw new UnauthorizedException();
+      throw new UnauthorizedException('E-mail or password is invalid.');
     }
     const payload = { userId: user.id, username: user.username };
     return {
