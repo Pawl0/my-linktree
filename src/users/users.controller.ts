@@ -34,7 +34,6 @@ export class UsersController {
     return this.usersService.findOne(+id);
   }
 
-  @UseGuards(AuthGuard('jwt'))
   @Get('/public/:username')
   findOneByUsername(@Param('username') username: string) {
     return this.usersService.findOneByUsername(username);
