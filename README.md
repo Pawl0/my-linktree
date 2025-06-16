@@ -67,6 +67,9 @@ $ pnpm run start
 # watch mode
 $ pnpm run start:dev
 
+# build
+$ pnpm run build
+
 # production mode
 $ pnpm run start:prod
 ```
