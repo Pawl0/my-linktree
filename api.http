@@ -60,9 +60,10 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name": "Paulo",
-    "username": "paulohos",
-    "email": "teste@gmail.com"
+    "name": "Paulo Henrique",
+    "username": "paulohos3",
+    "email": "teste3@gmail.com",
+    "password": "Teste123"
 }
 
 ### Updates a user
@@ -80,3 +81,13 @@ Content-Type: application/json
 
 DELETE http://localhost:3000/users/1
 Content-Type: application/json
+
+### Login
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "teste@gmail.com",
+    "password": "123456"
+}
