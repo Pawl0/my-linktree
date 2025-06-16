@@ -15,6 +15,12 @@ export class UsersService {
     try {
       return await this.prismaService.user.create({
         data: createUserDto,
+        select: {
+          id: true,
+          name: true,
+          username: true,
+          email: true,
+        },
       });
     } catch (error) {
       console.error(error.message);
